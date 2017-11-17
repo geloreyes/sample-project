@@ -1,0 +1,17 @@
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+        function randomString(length, chars) {
+            var result = '';
+            for (var i = length; i > 0; --i) result += chars[Math.floor(Math.random() * chars.length)];
+            return result;
+        }
+        var code = randomString(5, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
+        document.body.innerHTML = "[ { \"action\": \"talk\", \"voiceName\":\"Russell\", \"text\": \"Your generated code is, " + code + ". Again, your generated code is " + code + ".\" } ]"
+    </script>
+</body>
+</html>
